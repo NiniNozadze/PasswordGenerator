@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <title>Pass Generator</title>
+</head>
+<body>
+<div>
+    <h1>Password Generator</h1>
+    <div class="firstDiv">
+        <div class="generatedPassword"></div>
+        <input type="text" class="inputClass">
+        <img class="copyFile"src="./Images/copy file.png">
+        <p class="copied">COPIED</p>
+    </div>  
+    <div class="password">
+    <div> 
+        <p class="character-length">Character Length <span class="rangeValue">10</span></p>
+        <div class="range-container">
+        <input type="range" class="range" min="0" max="20" >
+        <div class="range-progress"></div>
+        </div>
+    </div>
+    <div>
+        <div class="first ticked">
+            <input type="checkbox" class="upper box">
+            <label class="uppercase same">Include Uppercase Letters</label>
+        </div>
+        <div class="second ticked">
+            <input type="checkbox" class="lower box">
+            <label class="lowercase same">Include Lowercase Letters</label>
+        </div>
+        <div class="third ticked">
+            <input type="checkbox" class="numbers box">
+            <label class="number same">Include Numbers</label>
+        </div>    
+        <div class="fourth ticked">
+            <input type="checkbox" class="symbols box">
+            <label class="symbols same">Include Symbols</label>
+        </div>
+    </div>
+    <div class="strength">
+        <p class="pass-stren">STRENGTH</p>
+        <div class="containersDiv">
+            <div class="medium">MEDIUM</div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+        </div>
+    </div>
+    <button class="button"><img class="arrow"src="./Images/arrow img.png">GENERATE</button>
+</div>
+</div>  
+</body>
+</html>

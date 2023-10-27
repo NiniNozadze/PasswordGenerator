@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+html{
+    font-size: 10px;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    background: linear-gradient(180deg, #14131B 0%, #08070B 100%);
+}
+h1{
+    color: #817D92;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+    margin-top: 64px;
+}
+.firstDiv{
+width: 343px;
+height: 64px;
+background: var(--Dark-Grey, #24232C);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.inputClass{
+    display: none;
+}
+
+.generatedPassword{
+margin-left: 10px;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+color: var(--Almost-White, #E6E5EA);
+}
+.copyFile{
+width: 17px;
+height: 20px;
+margin-right: 10px;
+}
+.copied{
+    color: var(--Neon-Green, #A4FFAF);
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 240px;
+position: absolute;
+display:none;
+}
+.password{
+    width: 343px;
+    height: 423px;
+    background: var(--Dark-Grey, #24232C);
+    margin-bottom: 63px;
+    margin-top: 16px;
+   
+}
+.character-length{
+    color: var(--Almost-White, #E6E5EA);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 18px 16px;
+}
+.range{
+    margin-left: 16px;
+    width: 100%;
+    height: 8px;
+    background: var(--Very-Dark-Grey, #18171F);
+    -webkit-appearance:none;
+}
+.range-container {
+    position: relative;
+    width: 311px;
+    height: 8px;
+    margin-bottom: 40px;
+  }
+.range::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    background: var(--Almost-White, #E6E5EA);
+    border-radius: 50%;   
+    position: relative;
+  z-index: 2;
+}
+.range-progress {
+    position: absolute;
+    height: 8px;
+    background: var(--Neon-Green, #A4FFAF);
+    top: 1px;
+    left: 16px;
+    z-index: 1;
+  }
+
+.rangeValue{
+color: var(--Neon-Green, #A4FFAF);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 2.4rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 119px;
+}
+.ticked{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.box{
+    width:20px;
+    height:20px;
+    border: 2px solid red
+    
+}
+.box:checked{
+   accent-color: #A4FFAF;
+}
+ 
+.same{
+color: var(--Almost-White, #E6E5EA);
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-left: 20px; 
+
+} 
+.strength{
+display: flex;
+justify-content:space-around;
+align-items: center;
+width: 311px;
+height: 56px;
+margin-top: 16px;
+margin-left: 16px;
+background: #18171F;
+border:none;
+justify-content: space-between;
+padding: 16px;
+
+}
+.pass-stren{
+    color: var(--Grey, #817D92);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.medium{
+    color: var(--Almost-White, #E6E5EA);
+text-align: right;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-right: 7px;
+margin-top: 3px;
+ display: none;
+   
+}
+.containersDiv{
+    display: flex;
+}
+
+.container{
+width: 10px;
+height: 28px;
+border: 2px solid var(--Almost-White, #E6E5EA);
+margin-left: 8px;
+display:none;
+}
+
+.button{
+    width: 311px;
+    height: 56px;
+    margin-left: 16px;
+    margin-top: 15px;
+    background: var(--Neon-Green, #A4FFAF);
+    border:none;
+    color: var(--Dark-Grey, #24232C);
+text-align: center;
+font-family: JetBrains Mono;
+font-size: 1.6rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.arrow{
+    transform: translate(104px,0px);
+}
+
+@media(min-width:768px){
+    h1{
+        margin-bottom: 31px;
+        margin-top: 133px;
+        font-size: 2.4rem;
+
+    }
+    .firstDiv{
+        width: 540px;
+        height: 80px;
+    }
+    .generatedPassword{
+        margin-left: 32px;
+    }
+    .copied{
+        margin-left: 411px;
+    }
+    .copyFile{
+      width:20px;
+      margin-right: 28px;
+    }
+    .password{
+        width: 540px;
+        height: 528px;
+        margin-top: 24px;
+    margin-bottom: 196px;
+    }
+    .character-length{
+        font-size: 1.8rem;
+        padding:34px 32px;
+    }
+    .range{
+        margin-left:32px;
+    }
+    .range-container{
+        width: 476px;
+       height: 8px;
+    }
+    .range-progress{
+        left: 32px;
+    }
+    .rangeValue{
+        margin-left: 252px;
+        font-size: 3.2rem;
+    }
+    .ticked{
+        margin-left: 32px;
+        margin-top: 19px;
+    }
+    
+    .same{
+        font-size: 1.8rem;
+    }
+    .pass-stren{
+        font-size: 1.8rem;
+    }
+    .medium{
+        font-size:2.4rem;
+        margin-right: 15px;
+        margin-top: 0px;
+    }
+    .strength{
+    width: 476px;
+    height: 70px;
+    margin: 32px;
+    padding: 32px;
+    }
+    .button{
+        width: 476px;
+        height: 65px;
+        margin-top: -14px;
+        margin-left: 32px;
+        font-size: 1.8rem;
+    }
+    .arrow{
+        transform: translate(120px,0px)
+    }
+}
